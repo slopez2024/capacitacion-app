@@ -36,7 +36,7 @@ export default function ProyectorPage() {
   const timerRef = useRef<NodeJS.Timeout | null>(null)
   const pollRef = useRef<NodeJS.Timeout | null>(null)
 
-  const baseUrl = typeof window !== 'undefined' ? window.location.origin : ''
+  const baseUrl = 'https://capacitacionapp.vercel.app'
   const eventUrl = `${baseUrl}/evento/${eventId}`
 
   const calculatePoints = (responseMs: number, timeLimitSeconds: number) => {
